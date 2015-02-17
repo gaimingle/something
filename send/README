@@ -1,0 +1,14 @@
+send
+========
+
+用于向某台主机的TCP或UDP端口发送数据，以观察网络中的分组
+
+使用:   send [-CRDN] [-p tcp|udp] [-s size] [-c count] [-S sleep_time] <IP> <PORT>
+       -C 如果使用UDP，则对UDP套结口调用connect
+       -R 开启一个子进程从套结口读
+       -D 设置DF位
+       -N 如果使用TCP，则关闭Nagle算法
+       -p proto 使用proto指定的协议
+       -s size 发次发送size大小的数据
+       -c count 发送count次
+       -S sleep_time 每次发送后睡眠sleep_time秒

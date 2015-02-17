@@ -1,0 +1,6 @@
+scan
+====
+
+用于扫描某台主机开启的TCP端口。
+用法： scan <ip> <min_port> <max_port>
+于是程序会扫描min_port~max_port范围的TCP端口。
